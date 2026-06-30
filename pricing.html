@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Stackly AI</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Compare monthly and yearly pricing plans for custom LLM models, predictive analytics, and containerized GPU cluster grids by Stackly AI.">
+    <meta name="keywords" content="AI pricing, GPU hours cost, LLM deployment plan, custom API SLA pricing">
+    <meta name="author" content="Stackly AI Team">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Ecosystem Pricing | Stackly AI">
+    <meta property="og:description" content="Transparent, secure tier integrations matching your corporate scalability parameters.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+    <link rel="stylesheet" href="assets/css/home.css"> <!-- Reused FAQ & Testimonial styling -->
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loading Animation Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+        </div>
+        <div class="loader-text">STACKLY.AI</div>
+    </div>
+
+    <!-- Page Transition Sliding Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient particles backdrop -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-mesh">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Stackly AI</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation menu">
+            <span></span><span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-actions-mobile">
+                <a href="login.html" class="btn-premium ghost">Login</a>
+                <a href="signup.html" class="btn-premium glow">Sign Up</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium ghost">Login</a>
+            <a href="signup.html" class="btn-premium glow">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="pricing-hero container-width" id="hero">
+        <div class="pricing-hero-content reveal">
+            <h1>Sanitised & Secure <span>Deployment Tiers</span>.</h1>
+            <p>Select the standard integration scale that fits your daily inference requirements. Scale compute nodes dynamically as you grow.</p>
+            
+            <!-- Billing Switcher -->
+            <div class="billing-switcher">
+                <span class="billing-lbl active" id="billing-monthly">Monthly</span>
+                <div class="toggle-switch">
+                    <div class="toggle-knob"></div>
+                </div>
+                <span class="billing-lbl" id="billing-yearly">Yearly</span>
+                <span class="discount-tag">Save 20%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: MONTHLY PLANS -->
+    <!-- SECTION 3: YEARLY PLANS -->
+    <section class="plans-section container-width">
+        
+        <!-- Monthly Grid -->
+        <div class="plans-grid monthly-plans-container">
+            
+            <!-- Starter -->
+            <div class="glass-card plan-card reveal-left">
+                <div class="plan-header">
+                    <h3>Starter Tier</h3>
+                    <p>Ideal for sandboxes and early stage integrations.</p>
+                    <div class="plan-price">$99<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>50 GPU Hours Included</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>1 Custom Fine-Tuned Model</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>60 RPM Rate Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Slack Channel Support</li>
+                </ul>
+                <a href="signup.html" class="btn-premium ghost" style="width: 100%; text-align: center; justify-content: center;">Deploy Sandbox</a>
+            </div>
+
+            <!-- Professional -->
+            <div class="glass-card plan-card popular reveal">
+                <div class="plan-header">
+                    <h3>Professional</h3>
+                    <p>Designed for mid-scale operational workloads.</p>
+                    <div class="plan-price">$299<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>200 GPU Hours Included</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>5 Custom Fine-Tuned Models</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>300 RPM Rate Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Dedicated Specialist Support</li>
+                </ul>
+                <a href="signup.html" class="btn-premium glow" style="width: 100%; text-align: center; justify-content: center;">Select Professional</a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="glass-card plan-card reveal-right">
+                <div class="plan-header">
+                    <h3>Enterprise Core</h3>
+                    <p>Crafted for multi-departmental pipelines.</p>
+                    <div class="plan-price">$899<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited GPU Hours</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited Custom Models</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Infinite Auto-Scaling Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Immediate 24/7 SLA Hotline</li>
+                </ul>
+                <a href="signup.html" class="btn-premium ghost" style="width: 100%; text-align: center; justify-content: center;">Contact Operations</a>
+            </div>
+
+        </div>
+
+        <!-- Yearly Grid (20% Off) -->
+        <div class="plans-grid yearly-plans-container">
+            
+            <!-- Starter -->
+            <div class="glass-card plan-card">
+                <div class="plan-header">
+                    <h3>Starter Tier</h3>
+                    <p>Ideal for sandboxes and early stage integrations.</p>
+                    <div class="plan-price">$79<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>50 GPU Hours Included</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>1 Custom Fine-Tuned Model</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>60 RPM Rate Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Slack Channel Support</li>
+                </ul>
+                <a href="signup.html" class="btn-premium ghost" style="width: 100%; text-align: center; justify-content: center;">Deploy Sandbox</a>
+            </div>
+
+            <!-- Professional -->
+            <div class="glass-card plan-card popular">
+                <div class="plan-header">
+                    <h3>Professional</h3>
+                    <p>Designed for mid-scale operational workloads.</p>
+                    <div class="plan-price">$239<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>200 GPU Hours Included</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>5 Custom Fine-Tuned Models</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>300 RPM Rate Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Dedicated Specialist Support</li>
+                </ul>
+                <a href="signup.html" class="btn-premium glow" style="width: 100%; text-align: center; justify-content: center;">Select Professional</a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="glass-card plan-card">
+                <div class="plan-header">
+                    <h3>Enterprise Core</h3>
+                    <p>Crafted for multi-departmental pipelines.</p>
+                    <div class="plan-price">$719<span>/mo</span></div>
+                </div>
+                <ul class="plan-features-list">
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited GPU Hours</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited Custom Models</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Infinite Auto-Scaling Limit</li>
+                    <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Immediate 24/7 SLA Hotline</li>
+                </ul>
+                <a href="signup.html" class="btn-premium ghost" style="width: 100%; text-align: center; justify-content: center;">Contact Operations</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 4: PRICING COMPARISON MATRIX -->
+    <section class="comparison-section container-width">
+        <h2 class="section-title reveal">Full Matrix Comparison</h2>
+        <div class="comparison-table-wrapper reveal">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Core Capacities</th>
+                        <th>Starter</th>
+                        <th>Professional</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fine-Tuned LLMs</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Daily Inferences</td>
+                        <td>Up to 10k</td>
+                        <td>Up to 250k</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>API Latency (SLA)</td>
+                        <td>No Guarantee</td>
+                        <td>&lt; 15ms</td>
+                        <td>&lt; 4.8ms</td>
+                    </tr>
+                    <tr>
+                        <td>Data Isolation</td>
+                        <td>Shared Container</td>
+                        <td>Dedicated VPC</td>
+                        <td>On-Prem / Private Node</td>
+                    </tr>
+                    <tr>
+                        <td>Support Ticket SLA</td>
+                        <td>24 Hours</td>
+                        <td>2 Hours</td>
+                        <td>Immediate Hotline</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECTION 5: KEY FEATURES (BADGES) -->
+    <section class="tech-section container-width" style="padding-top: 60px; padding-bottom: 60px;">
+        <h2 class="section-title reveal">Integration Limits</h2>
+        <div class="tech-grid">
+            <div class="tech-card reveal">
+                <h3>VPC Sandbox</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Isolated Networking</span>
+            </div>
+            <div class="tech-card reveal">
+                <h3>99.99% Uptime</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Continuous Failovers</span>
+            </div>
+            <div class="tech-card reveal">
+                <h3>H100 Clusters</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Advanced NVIDIA Pods</span>
+            </div>
+            <div class="tech-card reveal">
+                <h3>Token Compression</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">30% Efficiency Gain</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: ENTERPRISE SOLUTIONS (CALCULATOR) -->
+    <section class="pricing-section container-width" id="calculator">
+        <h2 class="section-title reveal">Interactive Cost Estimator</h2>
+        <div class="glass-card reveal" style="max-width: 700px; margin: 0 auto; padding: 50px 40px;">
+            <p style="text-align: center; margin-bottom: 30px; color: var(--text-secondary);">Drag the slider to estimate monthly cost including base rates and runtime GPU usage.</p>
+            <div class="form-group" style="margin-bottom: 35px;">
+                <label for="gpu-hours-slider" style="display: flex; justify-content: space-between; font-size: 1rem;">
+                    <span>Estimated Monthly GPU Hours</span>
+                    <span id="gpu-hours-val" style="color: var(--accent-cyan); font-weight: 700;">100 hours</span>
+                </label>
+                <input type="range" id="gpu-hours-slider" min="0" max="1000" value="100" style="width: 100%; accent-color: var(--accent-cyan); margin-top: 15px; cursor: pointer;">
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase;">Estimated Integration Price</div>
+                <div id="estimated-cost-val" style="font-family: var(--font-mono); font-size: 3.5rem; font-weight: 700; color: #ffffff; margin-top: 10px;">$384</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PRICING FAQS -->
+    <section class="faq-section container-width">
+        <h2 class="section-title reveal">Plan Queries</h2>
+        <div class="faq-list reveal">
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>What happens if I exceed my monthly GPU hours?</h3>
+                    <div class="faq-icon"></div>
+                </div>
+                <div class="faq-body">
+                    <p>Excess hours are billed at a flat rate of $0.85 per hour on Starter and Professional plans. Enterprise plans feature unrestricted compute limits and do not incur overflow rates.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>Can I change plans mid-billing period?</h3>
+                    <div class="faq-icon"></div>
+                </div>
+                <div class="faq-body">
+                    <p>Yes. When upgrading, remaining credits are automatically calculated and subtracted from your next invoice. Downgrades take effect at the start of your subsequent billing cycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: ONBOARDING PROCESS -->
+    <section class="process-section container-width">
+        <h2 class="section-title reveal">Operational Pipeline</h2>
+        <div class="process-grid">
+            <div class="process-card glass-card reveal-left">
+                <div class="process-step">1</div>
+                <h3>Deploy Sandbox</h3>
+                <p>Register and establish secure API endpoints within hours.</p>
+            </div>
+            <div class="process-card glass-card reveal">
+                <div class="process-step">2</div>
+                <h3>Ingest Records</h3>
+                <p>Upload files to train custom models under secure nodes.</p>
+            </div>
+            <div class="process-card glass-card reveal">
+                <div class="process-step">3</div>
+                <h3>Audit Weights</h3>
+                <p>Validate accuracy and latency compliance tags before launch.</p>
+            </div>
+            <div class="process-card glass-card reveal-right">
+                <div class="process-step">4</div>
+                <h3>Launch Production</h3>
+                <p>Direct live data requests to the active model instances.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: CLIENT TESTIMONIALS -->
+    <section class="testimonials-section container-width">
+        <h2 class="section-title reveal">ROI Reviews</h2>
+        <div class="testimonial-carousel glass-card reveal">
+            <div class="testimonial-track">
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">
+                        "The Professional tier allowed us to scale support bots seamlessly. We achieved a full return on investment in the first 24 days."
+                    </p>
+                    <div class="author-info">
+                        <div class="author-img">MT</div>
+                        <div class="author-meta">
+                            <h4>Marcus Vance</h4>
+                            <span>VP Operations, Chronos Group</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: STATISTICS -->
+    <section class="stats-section container-width">
+        <div class="stats-grid">
+            <div>
+                <div class="stat-number" data-target="24" data-suffix=" Days">0 Days</div>
+                <div class="stat-label">Average ROI Term</div>
+            </div>
+            <div>
+                <div class="stat-number" data-target="4.8" data-decimals="1" data-suffix="x">0.0x</div>
+                <div class="stat-label">Average ROI Multiple</div>
+            </div>
+            <div>
+                <div class="stat-number" data-target="90" data-suffix="%">0%</div>
+                <div class="stat-label">Fewer Bottlenecks</div>
+            </div>
+            <div>
+                <div class="stat-number" data-target="15" data-suffix=" mins">0 mins</div>
+                <div class="stat-label">API Deploy Time</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: CONTACT CTA -->
+    <section class="cta-section container-width">
+        <div class="cta-banner reveal-zoom">
+            <h2>Need a Custom Multi-GPU Setup?</h2>
+            <p>Connect directly with our virtualization engineers. We structure specialized container pods to host proprietary models.</p>
+            <div class="hero-btns" style="justify-content: center;">
+                <a href="contact.html" class="btn-premium glow">Request Custom Quote</a>
+                <a href="signup.html" class="btn-premium ghost">Create Free Sandbox</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: NEWSLETTER -->
+    <section class="choose-section container-width" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="footer-newsletter" style="max-width: 550px; margin: 0 auto; text-align: center;">
+            <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Pricing Updates Newsletter</h4>
+            <p style="margin-bottom: 25px;">Subscribe to receive alerts regarding cloud compute discounts and credit distributions.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                <input type="email" placeholder="email@company.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 13: SECURITY SLA GUARANTEE -->
+    <section class="sla-section container-width">
+        <div class="glass-card sla-card reveal">
+            <div class="sla-visual">99.99%</div>
+            <div class="sla-content">
+                <h3>SLA Guaranteed Performance</h3>
+                <p>We execute standard corporate service level agreements. If monthly node availability falls below 99.9%, clients receive immediate service credits covering 100% of their monthly invoice.</p>
+                <p>Security updates, database backups, and load balance orchestrations are executed with zero impact on active api requests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Stackly AI</span>
+                </a>
+                <p>Empowering global enterprises with secure, high-performance autonomous neural networks and intelligent data systems.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Capabilities</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Custom LLMs</a></li>
+                    <li><a href="services.html">Deep Networks</a></li>
+                    <li><a href="services.html">Vision Segmentation</a></li>
+                    <li><a href="services.html">Supply Prediction</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4>Ecosystem Digest</h4>
+                <p>Subscribe to receive developer updates, research logs, and model release notes.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                    <input type="email" placeholder="email@company.com" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly AI. Crafted for Excellence. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">SLA Agreement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <!-- Core Scripts -->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script> <!-- Reused Testimonial/Faq handlers -->
+    <script src="assets/js/pricing.js"></script>
+</body>
+</html>

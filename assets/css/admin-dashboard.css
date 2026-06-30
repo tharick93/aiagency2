@@ -1,0 +1,400 @@
+/* ==========================================================================
+   STACKLY AI - ADMIN DASHBOARD SPECIFIC STYLES
+   ========================================================================== */
+
+body {
+    background-color: #020105;
+}
+
+/* Sidebar and Main Layout structure matches User Dashboard style */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: rgba(6, 4, 16, 0.9);
+    border-right: 1px solid var(--border-glass);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(25px);
+    transition: var(--transition-smooth);
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.sidebar-logo span {
+    background: linear-gradient(135deg, #ffffff, var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: var(--border-glass);
+    border-radius: 2px;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.menu-item svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+}
+
+.menu-item.active a, .menu-item:hover a {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.menu-item.active a {
+    background: linear-gradient(135deg, rgba(127,0,255,0.08), rgba(255,0,127,0.08));
+    border: 1px solid rgba(127,0,255,0.15);
+}
+
+.menu-item.active svg {
+    color: var(--accent-purple);
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 280px;
+    padding: 40px;
+    min-height: 100vh;
+    transition: var(--transition-smooth);
+}
+
+/* Header, Profile and notifications widget styling */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.welcome-box h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.welcome-box p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.noti-btn {
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.noti-btn:hover {
+    color: #ffffff;
+    border-color: var(--accent-purple);
+}
+
+.noti-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-pink);
+    border-radius: 50%;
+}
+
+.user-profile-widget {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-glass);
+    padding: 6px 18px 6px 6px;
+    border-radius: 30px;
+}
+
+.profile-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.profile-info h4 {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.profile-info span {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    display: block;
+}
+
+/* Grid & Cards overrides */
+.dashboard-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.dashboard-card {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.db-card-value {
+    font-family: var(--font-mono);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.db-card-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.db-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-purple);
+}
+
+.dashboard-card:nth-child(2) .db-card-icon {
+    color: var(--accent-pink);
+}
+
+.dashboard-card:nth-child(3) .db-card-icon {
+    color: var(--accent-cyan);
+}
+
+.dashboard-grid-2 {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.analytics-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.svg-chart-container {
+    height: 220px;
+    width: 100%;
+}
+
+/* User management specific rows */
+.user-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.user-list-row:last-child {
+    border-bottom: none;
+}
+
+.user-list-name h5 {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.user-list-name span {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    display: block;
+}
+
+.user-action-btn {
+    background: transparent;
+    border: none;
+    color: var(--accent-cyan);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Tables styling */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-glass);
+    font-size: 0.85rem;
+}
+
+.responsive-table th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(255,255,255,0.01);
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+}
+
+.status-badge.pending {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+/* Mobile responsive dashboard header style */
+.mobile-header {
+    display: none;
+    background: rgba(8, 6, 20, 0.95);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.mobile-hamburger {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        left: -280px;
+    }
+    
+    .sidebar.open {
+        left: 0;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 25px 20px;
+    }
+    
+    .mobile-header {
+        display: flex;
+    }
+    
+    .dashboard-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .dashboard-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stackly AI</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Reach the Stackly AI expert team. Schedule a free consultation, request an RFP, or chat with our live agent.">
+    <meta name="keywords" content="Stackly AI telephone, AI agency office, schedule custom consultation, security connection contact">
+    <meta name="author" content="Stackly AI Team">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Contact Operations | Stackly AI">
+    <meta property="og:description" content="Get custom GPU clusters scaling metrics and sandbox deployments help.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loading Animation Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+        </div>
+        <div class="loader-text">STACKLY.AI</div>
+    </div>
+
+    <!-- Page Transition Sliding Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient particles backdrop -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-mesh">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Stackly AI</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation menu">
+            <span></span><span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li class="nav-actions-mobile">
+                <a href="login.html" class="btn-premium ghost">Login</a>
+                <a href="signup.html" class="btn-premium glow">Sign Up</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium ghost">Login</a>
+            <a href="signup.html" class="btn-premium glow">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="contact-hero container-width" id="hero">
+        <div class="contact-hero-content reveal">
+            <h1>Connect with <span>AI Architects</span>.</h1>
+            <p>Establish sandbox channels, discuss custom deep learning weights, or consult on private cluster integrations.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT CARDS -->
+    <section class="contact-cards-section container-width">
+        <div class="contact-cards-grid">
+            
+            <div class="glass-card contact-card reveal-left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <h3>Support Desk</h3>
+                <p>Have an active pipeline question? Open a ticket.</p>
+                <a href="mailto:support@stackly.com">support@stackly.com</a>
+            </div>
+
+            <div class="glass-card contact-card reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h3>Sales & RFP</h3>
+                <p>Request dedicated cluster quotes and contracts.</p>
+                <a href="mailto:sales@stackly.com">sales@stackly.com</a>
+            </div>
+
+            <div class="glass-card contact-card reveal-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <h3>Partnership</h3>
+                <p>Build on top of our distributed API gateway.</p>
+                <a href="mailto:partners@stackly.com">partners@stackly.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT FORM -->
+    <!-- SECTION 5: OFFICE DETAILS -->
+    <!-- SECTION 6: BUSINESS HOURS -->
+    <section class="contact-form-section container-width">
+        <div class="contact-grid">
+            
+            <!-- Contact Form -->
+            <div class="glass-card reveal-left" style="padding: 50px 40px;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 30px;">Send Secure Message</h3>
+                <form class="auth-form" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="firstname" placeholder="Sarah" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="lastname" placeholder="Conner" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Corporate Email</label>
+                            <div class="input-wrapper">
+                                <input type="email" id="email" placeholder="sarah@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrapper">
+                                <input type="tel" id="phone" placeholder="9876543210" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Detailed Enquiry</label>
+                            <div class="input-wrapper">
+                                <textarea id="message" placeholder="Provide details regarding your training dataset scale..." required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="auth-submit-btn" style="width: auto; padding: 15px 40px;">
+                        Transmit Inquiry
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Offices & Hours Info -->
+            <div class="reveal-right">
+                <div class="glass-card" style="margin-bottom: 30px; padding: 35px;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 15px;">Corporate HQ</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                        100 Pine Street, Suite 2400<br>
+                        San Francisco, CA 94111<br>
+                        United States
+                    </p>
+                </div>
+
+                <div class="glass-card" style="padding: 35px;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 15px;">Operational Hours</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>08:00 - 20:00 UTC</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>09:00 - 15:00 UTC</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed (Hotline Active)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: GOOGLE MAP PLACEHOLDER -->
+    <section class="container-width" style="padding-bottom: 100px;">
+        <h2 class="section-title reveal">San Francisco Node Map</h2>
+        <div class="map-container glass-card reveal">
+            <!-- Luxury Map Vector Illustration -->
+            <svg style="width: 100%; height: 100%; opacity: 0.3;" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 50h700v200H50z" stroke="url(#map-line-grad)" stroke-width="1.5" stroke-dasharray="10 5"/>
+                <!-- Map streets grids -->
+                <path d="M100 50v200M200 50v200M300 50v200M400 50v200M500 50v200M600 50v200M700 50v200" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                <path d="M50 100h700M50 150h700M50 200h700" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                <!-- HQ Pin Glow -->
+                <circle cx="400" cy="150" r="12" fill="url(#map-glow-grad)"/>
+                <circle cx="400" cy="150" r="4" fill="#00f2fe"/>
+                
+                <defs>
+                    <linearGradient id="map-line-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2"/>
+                        <stop offset="100%" stop-color="#7f00ff" stop-opacity="0.2"/>
+                    </linearGradient>
+                    <radialGradient id="map-glow-grad">
+                        <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+            <div class="map-coords" style="position: absolute; bottom: 20px; left: 20px;">
+                HQ_COORDS: 37.7749° N, 122.4194° W
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: SUPPORT TEAM -->
+    <section class="support-team-section container-width">
+        <h2 class="section-title reveal">Enquiry Resolution Leads</h2>
+        <div class="support-team-grid">
+            
+            <div class="glass-card support-member reveal-left">
+                <div class="support-member-avatar">AL</div>
+                <h3>Albert Locke</h3>
+                <p>Support Lead (SLA & Uptime)</p>
+                <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 10px;">Avg Response: 12m</div>
+            </div>
+
+            <div class="glass-card support-member reveal">
+                <div class="support-member-avatar">SM</div>
+                <h3>Sanjay Mehta</h3>
+                <p>Cloud Deployments Architect</p>
+                <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 10px;">Avg Response: 18m</div>
+            </div>
+
+            <div class="glass-card support-member reveal-right">
+                <div class="support-member-avatar">VR</div>
+                <h3>Victoria Rossi</h3>
+                <p>Sales Coordinator</p>
+                <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 10px;">Avg Response: 24m</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: CONTACT FAQS -->
+    <section class="faq-section container-width">
+        <h2 class="section-title reveal">Frequently Queries</h2>
+        <div class="faq-list reveal">
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>Do you sign Mutual Non-Disclosure Agreements (NDAs)?</h3>
+                    <div class="faq-icon"></div>
+                </div>
+                <div class="faq-body">
+                    <p>Absolutely. Before any technical details or dataset configurations are discussed, our legal team issues a secure digital mutual NDA via email.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>How can I request a customized request for proposal (RFP)?</h3>
+                    <div class="faq-icon"></div>
+                </div>
+                <div class="faq-body">
+                    <p>Simply transmit your baseline structural parameters using the contact form, or email our sales team directly at sales@stackly.com. We deliver customized RFPs within 24 business hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: SOCIAL MEDIA -->
+    <section class="tech-section container-width" style="padding-top: 60px; padding-bottom: 60px;">
+        <h2 class="section-title reveal">Corporate Ecosystem</h2>
+        <div class="tech-grid">
+            <a href="#" class="tech-card reveal" style="text-decoration: none; color: inherit;">
+                <h3>LinkedIn</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Corporate updates</span>
+            </a>
+            <a href="#" class="tech-card reveal" style="text-decoration: none; color: inherit;">
+                <h3>GitHub</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Developer SDKs</span>
+            </a>
+            <a href="#" class="tech-card reveal" style="text-decoration: none; color: inherit;">
+                <h3>X / Twitter</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Research logs</span>
+            </a>
+            <a href="#" class="tech-card reveal" style="text-decoration: none; color: inherit;">
+                <h3>YouTube</h3>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Integration guides</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 10: NEWSLETTER -->
+    <section class="choose-section container-width" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="footer-newsletter" style="max-width: 550px; margin: 0 auto; text-align: center;">
+            <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Developer Newsletters</h4>
+            <p style="margin-bottom: 25px;">Join a network of 40k+ technology leaders reviewing our weekly deep learning briefs.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                <input type="email" placeholder="email@company.com" required>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 11: FREE CONSULTATION SCHEDULER -->
+    <section class="scheduler-section container-width" id="scheduler">
+        <h2 class="section-title reveal">Schedule Call Sandbox</h2>
+        <div class="calendar-mock glass-card reveal">
+            <div class="calendar-header">
+                <h3>July 2026</h3>
+                <span style="font-size: 0.85rem; color: var(--accent-cyan);">UTC Timezone</span>
+            </div>
+            <div class="calendar-grid">
+                <!-- Day Labels -->
+                <span class="cal-day-label">Su</span><span class="cal-day-label">Mo</span><span class="cal-day-label">Tu</span><span class="cal-day-label">We</span><span class="cal-day-label">Th</span><span class="cal-day-label">Fr</span><span class="cal-day-label">Sa</span>
+                <!-- Dates -->
+                <span class="cal-date empty"></span><span class="cal-date empty"></span><span class="cal-date empty"></span><span class="cal-date">1</span><span class="cal-date">2</span><span class="cal-date">3</span><span class="cal-date">4</span>
+                <span class="cal-date">5</span><span class="cal-date">6</span><span class="cal-date">7</span><span class="cal-date active">8</span><span class="cal-date">9</span><span class="cal-date">10</span><span class="cal-date">11</span>
+                <span class="cal-date">12</span><span class="cal-date">13</span><span class="cal-date">14</span><span class="cal-date">15</span><span class="cal-date">16</span><span class="cal-date">17</span><span class="cal-date">18</span>
+                <span class="cal-date">19</span><span class="cal-date">20</span><span class="cal-date">21</span><span class="cal-date">22</span><span class="cal-date">23</span><span class="cal-date">24</span><span class="cal-date">25</span>
+                <span class="cal-date">26</span><span class="cal-date">27</span><span class="cal-date">28</span><span class="cal-date">29</span><span class="cal-date">30</span><span class="cal-date">31</span><span class="cal-date empty"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: LIVE CHAT UI WIDGET -->
+    <section class="live-chat-section container-width">
+        <h2 class="section-title reveal">Simulated Live Chat</h2>
+        <div class="chat-widget-mock reveal">
+            <div class="chat-widget-header">
+                <div class="chat-avatar">S</div>
+                <div class="chat-header-info">
+                    <h4>Stackly AI Agent</h4>
+                    <span>Active Now</span>
+                </div>
+            </div>
+            <div class="chat-widget-body" id="chat-body">
+                <div class="chat-bubble bot">
+                    Hello! I am the Stackly AI sandbox assistant. How can I help you scale today?
+                </div>
+            </div>
+            <div class="chat-widget-input">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button class="chat-send-btn" id="chat-send">
+                    <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13: SECURE CONNECTION CALLOUT -->
+    <section class="sla-section container-width" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="glass-card reveal" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 40px;">
+            <svg style="width: 45px; height: 45px; color: #22c55e; margin-bottom: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <h3>Secure Encrypted Transmission</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-top: 10px;">This submission form is encrypted using AES-256 standard protocols. No details are shared with external analytics networks.</p>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Stackly AI</span>
+                </a>
+                <p>Empowering global enterprises with secure, high-performance autonomous neural networks and intelligent data systems.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Capabilities</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Custom LLMs</a></li>
+                    <li><a href="services.html">Deep Networks</a></li>
+                    <li><a href="services.html">Vision Segmentation</a></li>
+                    <li><a href="services.html">Supply Prediction</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4>Ecosystem Digest</h4>
+                <p>Subscribe to receive developer updates, research logs, and model release notes.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                    <input type="email" placeholder="email@company.com" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly AI. Crafted for Excellence. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">SLA Agreement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <!-- Core Scripts -->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script> <!-- Reused Faq handlers -->
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

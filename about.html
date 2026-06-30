@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Stackly AI</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Read the corporate story, core vision, mission, timeline, and security certifications of Stackly AI. Meet our premium founders and leadership team.">
+    <meta name="keywords" content="Stackly AI history, founders message, AI team, ISO 27001 AI, global offices AI">
+    <meta name="author" content="Stackly AI Team">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Our Story | Stackly AI">
+    <meta property="og:description" content="Transforming industries through secure, luxury deep-learning networks.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loading Animation Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+        </div>
+        <div class="loader-text">STACKLY.AI</div>
+    </div>
+
+    <!-- Page Transition Sliding Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient particles backdrop -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-mesh">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Stackly AI</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation menu">
+            <span></span><span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-actions-mobile">
+                <a href="login.html" class="btn-premium ghost">Login</a>
+                <a href="signup.html" class="btn-premium glow">Sign Up</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium ghost">Login</a>
+            <a href="signup.html" class="btn-premium glow">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="about-hero container-width" id="hero">
+        <div class="about-hero-content reveal">
+            <h1>We are the Architects of <span>Bespoke Intelligence</span>.</h1>
+            <p>Stackly AI designs and deploys high-fidelity neural integrations that accelerate business operations. We bring luxury craftsmanship to artificial intelligence.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: COMPANY STORY -->
+    <section class="story-section container-width">
+        <div class="story-grid">
+            <div class="story-content reveal-left">
+                <h2>Our Genesis</h2>
+                <p>Founded in 2022 in Silicon Valley, Stackly AI emerged from a simple observation: while artificial intelligence was advancing rapidly, businesses lacked the tailored, premium support needed to safely integrate these technologies into production core frameworks.</p>
+                <p>We gathered deep learning researchers, cloud architects, and security officers to form a luxury agency that prioritizes security, sub-millisecond execution speeds, and absolute model isolation.</p>
+            </div>
+            <div class="story-visual reveal-right">
+                <div class="story-visual-mesh"></div>
+                <div class="story-cube"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: VISION -->
+    <!-- SECTION 4: MISSION -->
+    <section class="vision-mission-section container-width">
+        <div class="vision-mission-grid">
+            
+            <div class="glass-card vision-card reveal-left">
+                <div class="vm-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>Vision Statement</h3>
+                <p>To establish the world's most trusted, premium artificial intelligence grid, empowering legacy institutions to run fully autonomous neural pipelines safely and with absolute precision.</p>
+            </div>
+
+            <div class="glass-card mission-card reveal-right">
+                <div class="vm-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3>Mission Statement</h3>
+                <p>We design custom-tailored algorithms, secure hosting blocks, and continuous model optimizations to eliminate technological bottleneck and maximize operational ROI for our clients.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: CORE VALUES -->
+    <section class="values-section container-width">
+        <h2 class="section-title reveal">Corporate Values</h2>
+        <div class="values-grid">
+            
+            <div class="glass-card value-card reveal-left">
+                <h3>Absolute Integrity</h3>
+                <p>We reject data scraping. All weights and parameters are trained strictly on sanitized client inputs under absolute NDAs.</p>
+            </div>
+
+            <div class="glass-card value-card reveal">
+                <h3>High Velocity</h3>
+                <p>We deploy production-grade pipelines in weeks rather than months, keeping API response latency under 5ms.</p>
+            </div>
+
+            <div class="glass-card value-card reveal-right">
+                <h3>Flawless Scaling</h3>
+                <p>All microservices are containerized on distributed GPU topologies to support millions of concurrent inferences without lag.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: COMPANY TIMELINE -->
+    <section class="timeline-section container-width">
+        <h2 class="section-title reveal">Journey Milestone</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-panel glass-card">
+                    <span class="timeline-year">2022</span>
+                    <h3>Ecosystem Founding</h3>
+                    <p>Stackly AI is established with initial seed backing of $6M to construct high-security sandbox GPU clusters.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-panel glass-card">
+                    <span class="timeline-year">2024</span>
+                    <h3>Enterprise Release</h3>
+                    <p>Launch of our custom Autonomous Agent API, facilitating immediate translation and ticketing bots integrations for global companies.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-panel glass-card">
+                    <span class="timeline-year">2026</span>
+                    <h3>Global Nodes Expansion</h3>
+                    <p>Orchestrating local office clusters across London, Chennai, and Berlin, managing over 500M inference calls daily.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: FOUNDER MESSAGE -->
+    <section class="founder-section container-width">
+        <div class="glass-card founder-card reveal">
+            <div class="founder-img-box">
+                <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="founder-msg">
+                <blockquote>
+                    "We did not build Stackly AI to simply follow technological trends. We built it to define standard compliance. For us, every model is a custom craft, trained to deliver flawless enterprise logic under secure nodes."
+                </blockquote>
+                <div class="founder-name">
+                    <h4>Dr. Alistair Vance</h4>
+                    <span>Chief Executive Officer & Founder, Stackly AI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: LEADERSHIP TEAM -->
+    <section class="team-section container-width">
+        <h2 class="section-title reveal">Executive Board</h2>
+        <div class="team-grid">
+            
+            <!-- Leader 1 -->
+            <div class="team-member reveal-left">
+                <div class="member-avatar">AJ</div>
+                <h3>Sarah Jenkins</h3>
+                <p>Chief Technology Officer</p>
+                <div class="team-socials">
+                    <a href="#">LinkedIn</a> &middot; <a href="#">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Leader 2 -->
+            <div class="team-member reveal">
+                <div class="member-avatar">DC</div>
+                <h3>Dr. David Cho</h3>
+                <p>Head of Deep Learning</p>
+                <div class="team-socials">
+                    <a href="#">LinkedIn</a> &middot; <a href="#">Research</a>
+                </div>
+            </div>
+
+            <!-- Leader 3 -->
+            <div class="team-member reveal-right">
+                <div class="member-avatar">ES</div>
+                <h3>Elena Smirnova</h3>
+                <p>VP Security & Compliance</p>
+                <div class="team-socials">
+                    <a href="#">LinkedIn</a> &middot; <a href="#">Keybase</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 9: ACHIEVEMENTS -->
+    <section class="awards-section container-width">
+        <h2 class="section-title reveal">Corporate Distinctions</h2>
+        <div class="awards-grid">
+            
+            <div class="glass-card award-card reveal-left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <h3>AI Innovator Award</h3>
+                <p>Ranked #1 for secure model deployments in global logistics.</p>
+            </div>
+
+            <div class="glass-card award-card reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
+                <h3>Deloitte Fast 50</h3>
+                <p>Identified as one of the fastest growing tech setups in 2025.</p>
+            </div>
+
+            <div class="glass-card award-card reveal-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <h3>Latency Leader</h3>
+                <p>Acknowledged for keeping sub-5ms API inference loops.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: CERTIFICATIONS -->
+    <section class="certs-section container-width">
+        <h2 class="section-title reveal">Audited Compliances</h2>
+        <div class="certs-grid">
+            
+            <div class="cert-card reveal">
+                <h3>SOC2 Type II</h3>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Security & Availability</p>
+            </div>
+
+            <div class="cert-card reveal">
+                <h3>ISO 27001</h3>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Data Asset Protection</p>
+            </div>
+
+            <div class="cert-card reveal">
+                <h3>HIPAA Safe</h3>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Health Records Encryption</p>
+            </div>
+
+            <div class="cert-card reveal">
+                <h3>GDPR Compliant</h3>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">User Right to Erasure</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 11: GLOBAL PRESENCE -->
+    <section class="global-section container-width">
+        <div class="global-grid">
+            <div class="office-info reveal-left">
+                <h2>Our Global Topography</h2>
+                <p>We route our distributed model nodes across four strategic centers to ensure near-zero transit time for API requests across the Americas, Europe, and Asia.</p>
+                <ul class="office-list">
+                    <li>Silicon Valley Headquarters (San Francisco, CA)</li>
+                    <li>London Regional Operations (London, UK)</li>
+                    <li>Chennai Engineering Hub (Tamil Nadu, India)</li>
+                    <li>Berlin Core Node (Berlin, Germany)</li>
+                </ul>
+            </div>
+            <div class="map-container reveal-right">
+                <div class="map-coords">
+                    SYSTEM_BOOTING...<br>
+                    CONNECTING CORE NODES...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: CULTURE -->
+    <section class="culture-section container-width">
+        <h2 class="section-title reveal">Our Work Culture</h2>
+        <div class="culture-grid">
+            
+            <div class="glass-card culture-card reveal-left">
+                <h3>Research First</h3>
+                <p>Our engineers dedicate 20% of their sprints strictly to open-source contributions and algorithmic updates.</p>
+            </div>
+
+            <div class="glass-card culture-card reveal">
+                <h3>Remote Cohesion</h3>
+                <p>We work synchronously across timezones, backed by high-speed communication channels and shared sandboxes.</p>
+            </div>
+
+            <div class="glass-card culture-card reveal-right">
+                <h3>Ethical Responsibility</h3>
+                <p>We audit all active weights models weekly to identify and eliminate system data biases.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 13: JOIN OUR TEAM -->
+    <section class="careers-section container-width">
+        <div class="careers-card reveal-zoom">
+            <h2>Accelerate Your Career Path</h2>
+            <p>We are always looking for visionary researchers, deep learning engineers, and security specialists to push limits.</p>
+            <a href="contact.html" class="btn-premium glow">View Open Positions</a>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Stackly AI</span>
+                </a>
+                <p>Empowering global enterprises with secure, high-performance autonomous neural networks and intelligent data systems.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Capabilities</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Custom LLMs</a></li>
+                    <li><a href="services.html">Deep Networks</a></li>
+                    <li><a href="services.html">Vision Segmentation</a></li>
+                    <li><a href="services.html">Supply Prediction</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4>Ecosystem Digest</h4>
+                <p>Subscribe to receive developer updates, research logs, and model release notes.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                    <input type="email" placeholder="email@company.com" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly AI. Crafted for Excellence. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">SLA Agreement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <!-- Core Scripts -->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stackly AI</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Securely access your Stackly AI user or admin dashboard. Optimize your operations and analytics.">
+    <meta name="keywords" content="Stackly AI login, admin panel access, client portal, user dashboard">
+    <meta property="og:title" content="Secure Sign In | Stackly AI">
+    <meta property="og:description" content="Log in to access automated agents, project statistics, and premium billing configurations.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loading Animation Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+        </div>
+        <div class="loader-text">STACKLY.AI</div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Background Particle Canvas and ambient blobs -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-mesh">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <span>Stackly AI</span>
+        </a>
+        <button class="hamburger">
+            <span></span><span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-actions-mobile">
+                <a href="login.html" class="btn-premium ghost active">Login</a>
+                <a href="signup.html" class="btn-premium glow">Sign Up</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium ghost active">Login</a>
+            <a href="signup.html" class="btn-premium glow">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Authentication Area -->
+    <main class="auth-wrapper">
+        <div class="auth-container">
+            
+            <!-- Left Panel: Brand info / Promo -->
+            <div class="auth-sidebar">
+                <a href="index.html" class="auth-sidebar-brand">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Stackly AI</span>
+                </a>
+                
+                <div class="auth-sidebar-content">
+                    <h2>Welcome to the Future of AI.</h2>
+                    <p>Enter the ecosystem where neural networks meet enterprise-level efficiency. Scale your business autonomously today.</p>
+                    
+                    <ul class="auth-features">
+                        <li>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            Real-time AI Model Deployments
+                        </li>
+                        <li>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            Intuitive Analytics Dashboard
+                        </li>
+                        <li>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            Full SLA Security Compliances
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="auth-sidebar-footer">
+                    &copy; 2026 Stackly AI. Crafted for Excellence.
+                </div>
+            </div>
+
+            <!-- Right Panel: Form -->
+            <div class="auth-form-wrapper">
+                <h3>Access Ecosystem</h3>
+                <p class="auth-subtitle">New to Stackly AI? <a href="signup.html">Create an Account</a></p>
+                
+                <!-- Role Switcher Toggle -->
+                <div class="role-toggle-container">
+                    <button type="button" class="role-toggle-btn active" id="toggle-user">User Login</button>
+                    <button type="button" class="role-toggle-btn" id="toggle-admin">Admin Login</button>
+                    <div class="role-toggle-slider"></div>
+                </div>
+
+                <form class="auth-form" id="login-form" novalidate>
+                    <!-- Role input placeholder -->
+                    <input type="hidden" id="auth-role" value="user">
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <input type="email" id="email" placeholder="john.doe@company.com" required>
+                        </div>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <!-- Options Row -->
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember">
+                            <span class="checkbox-custom"></span>
+                            Remember Me
+                        </label>
+                        <a href="#" class="forgot-pass" onclick="window.showToast('Reset password link sent to your email!', 'success')">Forgot Password?</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="auth-submit-btn">
+                        Sign In
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="auth-divider">OR CONTINUE WITH</div>
+
+                <!-- Social Signins -->
+                <div class="social-auth-grid">
+                    <button class="social-auth-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.24 10.285V13.4h6.887c-.648 2.41-2.519 4.113-5.136 4.113A5.73 5.73 0 0 1 8.2 11.8a5.73 5.73 0 0 1 5.79-5.714c1.558 0 3.003.58 4.106 1.634l2.444-2.404C18.995 3.794 16.59 2.8 13.99 2.8 8.688 2.8 4.4 7.026 4.4 12.24S8.688 21.68 13.99 21.68c5.074 0 9.074-3.528 9.074-9.143 0-.61-.06-1.196-.172-1.752H12.24v-.5Z"/>
+                        </svg>
+                        Google
+                    </button>
+                    <button class="social-auth-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                        GitHub
+                    </button>
+                    <button class="social-auth-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="footer" style="padding-top: 40px; padding-bottom: 20px;">
+        <div class="footer-bottom" style="border: none; padding: 0;">
+            <p>&copy; 2026 Stackly AI. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Stackly AI</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Explore custom LLM chatbots, predictive ML, image segmentation, computer vision, data analytics, and cloud AI systems designed by Stackly AI.">
+    <meta name="keywords" content="NLP custom agency, Deep Learning infrastructure, Computer Vision setup, cloud AI scale, UI/UX systems">
+    <meta name="author" content="Stackly AI Team">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="AI Capabilities | Stackly AI">
+    <meta property="og:description" content="Building next-generation automated systems with sub-5ms latency APIs.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loading Animation Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+        </div>
+        <div class="loader-text">STACKLY.AI</div>
+    </div>
+
+    <!-- Page Transition Sliding Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient particles backdrop -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-mesh">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Stackly AI</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation menu">
+            <span></span><span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-actions-mobile">
+                <a href="login.html" class="btn-premium ghost">Login</a>
+                <a href="signup.html" class="btn-premium glow">Sign Up</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium ghost">Login</a>
+            <a href="signup.html" class="btn-premium glow">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="services-hero container-width" id="hero">
+        <div class="services-hero-content reveal">
+            <h1>Premium <span>AI Capabilities</span> & Integrations.</h1>
+            <p>We build production-ready machine learning solutions, custom language models, and high-performance automated grids that drive enterprise margins.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: AI CHATBOTS -->
+    <section class="service-detail-section container-width" id="chatbots">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>1. Custom Autonomous Agents</h2>
+                <p>We train state-of-the-art Large Language Models (LLMs) on your specific business records, files, and ticketing history. Deploy conversational systems that resolve user support queries with deep context awareness and zero hallucination rates.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Fine-Tuning Llama3</span>
+                    <span class="cap-badge">GPT-4o Integrations</span>
+                    <span class="cap-badge">Vector DB / RAG</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">Agent Accuracy Improvement</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="45" data-val="v1.0 (45%)"></div>
+                    <div class="visual-bar" data-height="78" data-val="v2.0 (78%)"></div>
+                    <div class="visual-bar" data-height="99" data-val="Stackly (99.8%)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MACHINE LEARNING -->
+    <section class="service-detail-section container-width" id="ml">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>2. Predictive Machine Learning</h2>
+                <p>Transform raw tables and historical metrics into actionable revenue forecasts. Our engineers build custom classification, regression, and anomaly detection pipelines that run continuously on your secure databases.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Tabular Forecasts</span>
+                    <span class="cap-badge">XGBoost Tuning</span>
+                    <span class="cap-badge">Feature Engineering</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">Predictive Core</span>
+                <div class="visual-code">
+                    <pre><code>import stackly as st
+model = st.MLModel('revenue-forecast')
+model.train(data_path='./sales.csv')
+print(model.evaluate())
+# Output: Accuracy 98.42%</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DEEP LEARNING -->
+    <section class="service-detail-section container-width" id="deep-learning">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>3. Custom Deep Neural Networks</h2>
+                <p>Architect specialized multi-layer neural networks for complex processing tasks. We build and train feed-forward, recurrent, and transformer weights structures optimized to run on modern distributed GPU clusters.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">PyTorch Architectures</span>
+                    <span class="cap-badge">CNN / LSTM Blocks</span>
+                    <span class="cap-badge">Weights Optimization</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">Daily Operations Processing</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="30" data-val="150M Ops"></div>
+                    <div class="visual-bar" data-height="60" data-val="300M Ops"></div>
+                    <div class="visual-bar" data-height="95" data-val="500M+ Ops"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: NLP -->
+    <section class="service-detail-section container-width" id="nlp">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>4. Natural Language Processing</h2>
+                <p>Unlock structured values from unstructured text. Our NLP solutions handle complex semantic parsing, multilingual translations, sentiment mapping, and automated PDF document summary extraction at scale.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Semantic Extraction</span>
+                    <span class="cap-badge">Named Entity Recognition</span>
+                    <span class="cap-badge">Multilingual Models</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">NLP Parser Output</span>
+                <div class="visual-code">
+                    <pre><code>{
+  "entity": "Stackly AI",
+  "category": "Luxury AI Agency",
+  "sentiment": "Extremely Positive",
+  "confidence": 0.9986
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: COMPUTER VISION -->
+    <section class="service-detail-section container-width" id="vision">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>5. Computer Vision & Segmentation</h2>
+                <p>Implement real-time visual analytics systems. We design custom convolutional networks for image classification, target object detection, and spatial edge segmentation for manufacturing, logistics, and medical imaging.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Object Tracking</span>
+                    <span class="cap-badge">Semantic Segmentations</span>
+                    <span class="cap-badge">YOLO / ResNet Tunings</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">Vision Frame Latency</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="85" data-val="CPU (85ms)"></div>
+                    <div class="visual-bar" data-height="30" data-val="GPU Core (30ms)"></div>
+                    <div class="visual-bar" data-height="8" data-val="Stackly Edge (8ms)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: AUTOMATION -->
+    <section class="service-detail-section container-width" id="automation">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>6. Autonomous Orchestrations</h2>
+                <p>Connect systems together with smart event pipelines. Replace manual workflows with self-healing, API-driven workflows that auto-resolve bottlenecks without code overhead.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">RPA Integrations</span>
+                    <span class="cap-badge">System Hooks</span>
+                    <span class="cap-badge">Error Mitigation</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">Auto Orchestrations</span>
+                <div class="visual-code">
+                    <pre><code>> stackly flow --trigger event_invoice
+[TRIGGER] Invoice detected.
+[MODEL] Extracting entity details...
+[API] Updating ledger. Success.
+[NOTIFY] Slack alert sent.</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: CLOUD AI -->
+    <section class="service-detail-section container-width" id="cloud-ai">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>7. High-Performance Cloud AI</h2>
+                <p>Deploy models securely across AWS, GCP, Azure, or local private clouds. We structure elastic auto-scaling GPU environments that adapt compute nodes to fit real-time requests volume.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Kubernetes Grids</span>
+                    <span class="cap-badge">Multi-Cloud Deploys</span>
+                    <span class="cap-badge">Triton Inference Servers</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">Compute Efficiency</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="50" data-val="Standard Grid (50%)"></div>
+                    <div class="visual-bar" data-height="65" data-val="Shared Instance (65%)"></div>
+                    <div class="visual-bar" data-height="92" data-val="Stackly Elastic (92%)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: DATA ANALYTICS -->
+    <section class="service-detail-section container-width" id="analytics">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>8. Intelligent Data Analytics</h2>
+                <p>Extract direct business insights from large-scale structured storage. We build auto-updating interactive graphics and metric dashboards displaying anomalies, trends, and growth indices.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Anomaly Alerting</span>
+                    <span class="cap-badge">Time-Series Forecasts</span>
+                    <span class="cap-badge">Insight Summarizers</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">Insight Engine Output</span>
+                <div class="visual-code">
+                    <pre><code>[ANOMALY DETECTED]
+Type: Transaction Outlier
+Value Delta: +340%
+Location: London Region
+Action: Triggered audit log verification.</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: WEB DEVELOPMENT -->
+    <section class="service-detail-section container-width" id="web-dev">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>9. Custom AI Web Architectures</h2>
+                <p>Construct high-speed, interactive web platforms backed directly by model APIs. We code luxury frontends featuring fast response loads, and real-time socket connections.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">NextJS / React</span>
+                    <span class="cap-badge">WebSockets / API Grids</span>
+                    <span class="cap-badge">SEO Semantic Coding</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">Web Performance Score</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="60" data-val="Standard (60)"></div>
+                    <div class="visual-bar" data-height="82" data-val="Optimized (82)"></div>
+                    <div class="visual-bar" data-height="98" data-val="Stackly Engine (98)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: MOBILE APPS -->
+    <section class="service-detail-section container-width" id="mobile-apps">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>10. On-Device Mobile AI</h2>
+                <p>Deliver intelligent experiences directly to iOS and Android applications. We compile and compress neural weights models to run locally on-device, bypassing API costs entirely.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">CoreML iOS</span>
+                    <span class="cap-badge">TensorFlow Lite Android</span>
+                    <span class="cap-badge">Offline Models Inference</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">Mobile SDK Setup</span>
+                <div class="visual-code">
+                    <pre><code>import StacklyMobileSDK
+let client = StacklyClient()
+client.loadLocalWeights("image_classifier")
+let prediction = client.predict(image_buffer)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: UI/UX -->
+    <section class="service-detail-section container-width" id="ui-ux">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-left">
+                <h2>11. Luxury UI/UX Design</h2>
+                <p>We draft premium user experiences built on modern typography, dark glassmorphism, responsive flows, and smooth micro-animations that represent modern corporate values.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Figma Prototypes</span>
+                    <span class="cap-badge">Design System Coding</span>
+                    <span class="cap-badge">Interactive Demos</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-right">
+                <span class="detail-visual-title">User Interaction Lift</span>
+                <div class="visual-chart">
+                    <div class="visual-bar" data-height="35" data-val="Baseline (35%)"></div>
+                    <div class="visual-bar" data-height="62" data-val="Standard Redesign (62%)"></div>
+                    <div class="visual-bar" data-height="89" data-val="Premium UI (89% lift)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13: DIGITAL MARKETING -->
+    <section class="service-detail-section container-width" id="marketing">
+        <div class="service-detail-grid">
+            <div class="detail-text reveal-right">
+                <h2>12. AI Growth Optimization</h2>
+                <p>Automate and scale customer acquisition using predictive cost-per-click models. Deploy analytics systems that track conversion signals and optimize budgets across marketing pipelines.</p>
+                <div class="capabilities-badges">
+                    <span class="cap-badge">Budget Forecasts</span>
+                    <span class="cap-badge">CPC Arbitrage</span>
+                    <span class="cap-badge">Behavior Mappings</span>
+                </div>
+            </div>
+            <div class="detail-visual glass-card reveal-left">
+                <span class="detail-visual-title">Ad Spend ROI Lift</span>
+                <div class="visual-code">
+                    <pre><code>[CPC MODEL STATUS]
+Spend allocation: Optimized
+CPC variance: -32%
+Conversions: +145%
+ROI Index: 4.8x</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Stackly AI</span>
+                </a>
+                <p>Empowering global enterprises with secure, high-performance autonomous neural networks and intelligent data systems.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Capabilities</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Custom LLMs</a></li>
+                    <li><a href="services.html">Deep Networks</a></li>
+                    <li><a href="services.html">Vision Segmentation</a></li>
+                    <li><a href="services.html">Supply Prediction</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4>Ecosystem Digest</h4>
+                <p>Subscribe to receive developer updates, research logs, and model release notes.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed to newsletter!', 'success'); this.reset();">
+                    <input type="email" placeholder="email@company.com" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly AI. Crafted for Excellence. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">SLA Agreement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <!-- Core Scripts -->
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+</html>

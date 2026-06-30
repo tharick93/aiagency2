@@ -1,0 +1,192 @@
+/* ==========================================================================
+   STACKLY AI - SERVICES PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+/* Services Hero */
+.services-hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.services-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.services-hero h1 span {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Service Detail Sections */
+.service-detail-section {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.service-detail-section:nth-child(even) {
+    background: rgba(5,4,12,0.3);
+}
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.service-detail-section:nth-child(even) .service-detail-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+
+.service-detail-section:nth-child(even) .service-detail-grid .detail-text {
+    grid-column: 2;
+}
+
+.service-detail-section:nth-child(even) .service-detail-grid .detail-visual {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.detail-text h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.detail-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.capabilities-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cap-badge {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-glass);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.cap-badge:hover {
+    color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    background: rgba(0, 242, 254, 0.05);
+}
+
+/* Service Detail Visualizations */
+.detail-visual {
+    background: rgba(10, 8, 20, 0.5);
+    border: 1px solid var(--border-glass);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+}
+
+.detail-visual-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.visual-chart {
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.visual-bar {
+    flex-grow: 1;
+    background: linear-gradient(to top, var(--accent-purple), var(--accent-cyan));
+    border-radius: 5px 5px 0 0;
+    height: 0;
+    transition: height 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.visual-bar::after {
+    content: attr(data-val);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-primary);
+}
+
+/* Specific Interactive Code Panel style */
+.visual-code {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-cyan);
+    background: rgba(3, 2, 8, 0.85);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .services-hero h1 { font-size: 3rem; }
+    .service-detail-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+    .service-detail-section:nth-child(even) .service-detail-grid .detail-text {
+        grid-column: 1;
+    }
+    .service-detail-section:nth-child(even) .service-detail-grid .detail-visual {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-hero h1 { font-size: 2.2rem; }
+    .detail-visual { padding: 25px; }
+    .visual-chart { gap: 8px; }
+}

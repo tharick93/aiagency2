@@ -1,0 +1,345 @@
+/* ==========================================================================
+   STACKLY AI - PRICING PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+/* Pricing Hero */
+.pricing-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.pricing-hero h1 span {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing-hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Billing Toggle Slider */
+.billing-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.billing-lbl {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.billing-lbl.active {
+    color: #ffffff;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 60px;
+    height: 32px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.toggle-knob {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    border-radius: 50%;
+    transition: var(--transition-smooth);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+}
+
+.toggle-switch.yearly-active .toggle-knob {
+    transform: translateX(28px);
+}
+
+.discount-tag {
+    background: rgba(255, 0, 127, 0.15);
+    border: 1px solid var(--accent-pink);
+    color: #ffffff;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+/* Plan Cards Grid */
+.plans-section {
+    padding: 50px 0;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.plan-card.popular {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 15px 35px rgba(0, 242, 254, 0.1), var(--shadow-premium);
+    transform: scale(1.03);
+}
+
+.plan-card.popular::after {
+    content: 'RECOMMENDED';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-cyan);
+    color: var(--bg-dark);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.plan-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.plan-header p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.plan-price {
+    font-family: var(--font-mono);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.plan-price span {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.plan-features-list {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.plan-features-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.plan-features-list svg {
+    width: 18px;
+    height: 18px;
+    color: var(--accent-cyan);
+}
+
+/* Toggle Monthly/Yearly Display */
+.yearly-plans-container {
+    display: none;
+}
+
+.billing-active-yearly .monthly-plans-container {
+    display: none;
+}
+
+.billing-active-yearly .yearly-plans-container {
+    display: grid;
+}
+
+/* Pricing Matrix Table */
+.comparison-section {
+    padding: 100px 0;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    background: rgba(10, 8, 20, 0.4);
+    box-shadow: var(--shadow-premium);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 750px;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border-glass);
+    font-size: 0.9rem;
+}
+
+.comparison-table th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255,255,255,0.02);
+}
+
+.comparison-table tr:hover td {
+    background: rgba(255,255,255,0.01);
+}
+
+.comparison-table td svg {
+    width: 18px;
+    height: 18px;
+    color: var(--accent-cyan);
+}
+
+/* Process roadmap styles */
+.process-section {
+    padding: 100px 0;
+    background: rgba(5,4,12,0.3);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.process-card {
+    padding: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.process-step {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 auto 20px;
+}
+
+.process-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.process-card p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* SLA Guarantee styling */
+.sla-section {
+    padding: 100px 0;
+}
+
+.sla-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 60px;
+}
+
+.sla-visual {
+    background: radial-gradient(circle, rgba(127,0,255,0.05) 0%, transparent 70%), rgba(10,8,20,0.5);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+}
+
+.sla-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.sla-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .plans-grid, .process-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .plan-card.popular {
+        transform: none;
+    }
+    .sla-card {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+}

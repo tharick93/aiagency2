@@ -1,0 +1,53 @@
+/* ==========================================================================
+   STACKLY AI - 404 PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+.error-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.error-container {
+    max-width: 600px;
+}
+
+.error-code {
+    font-family: var(--font-mono);
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 30px rgba(0, 242, 254, 0.3));
+    animation: pulse 3s infinite alternate;
+}
+
+.error-container h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Pulse animation keyframe */
+@keyframes pulse {
+    0% { transform: scale(1); filter: drop-shadow(0 0 30px rgba(0, 242, 254, 0.3)); }
+    100% { transform: scale(1.03); filter: drop-shadow(0 0 50px rgba(127, 0, 255, 0.5)); }
+}
