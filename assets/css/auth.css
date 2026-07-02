@@ -2,6 +2,18 @@
    STACKLY AI - AUTHENTICATION PAGES (LOGIN & SIGNUP) CSS
    ========================================================================== */
 
+body {
+    cursor: auto;
+}
+
+a, button, .role-toggle-btn, .social-auth-btn, .auth-submit-btn, .forgot-pass, .checkbox-container {
+    cursor: pointer;
+}
+
+input, textarea, select {
+    cursor: text;
+}
+
 .auth-wrapper {
     min-height: 100vh;
     display: flex;

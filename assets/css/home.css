@@ -1066,3 +1066,88 @@
         gap: 30px;
     }
 }
+/* ==========================================
+   GLOBAL PAGE ALIGNMENT FIX
+========================================== */
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+/* Apply spacing to every section */
+section,
+.hero-section,
+.trusted-section,
+.services-section,
+.about-preview,
+.choose-section,
+.solutions-section,
+.stats-section,
+.projects-section,
+.tech-section,
+.industries-section,
+.testimonials-section,
+.faq-section,
+.cta-section{
+    padding-left:20px !important;
+    padding-right:20px !important;
+}
+
+/* Center all grids */
+.hero-grid,
+.about-preview-grid,
+.choose-grid,
+.solution-layout,
+.stats-grid,
+.projects-grid,
+.tech-grid,
+.industries-grid,
+.services-grid{
+    width:100%;
+    max-width:1320px;
+    margin:0 auto;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    section,
+    .hero-section,
+    .trusted-section,
+    .services-section,
+    .about-preview,
+    .choose-section,
+    .solutions-section,
+    .stats-section,
+    .projects-section,
+    .tech-section,
+    .industries-section,
+    .testimonials-section,
+    .faq-section,
+    .cta-section{
+        padding-left:16px !important;
+        padding-right:16px !important;
+    }
+}
+.project-img-placeholder{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}/* Stop image rotation */
+.project-img-placeholder{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    animation:none !important;
+    transform:none !important;
+}

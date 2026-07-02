@@ -995,3 +995,39 @@ body {
 .toast.error .toast-icon {
     color: #ef4444;
 }
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+section{
+    width:100%;
+}
+
+.container-width>*{
+    width:100%;
+    max-width:100%;
+}
+
+.glass-card,
+.timeline-panel,
+.team-member,
+.value-card,
+.award-card,
+.cert-card,
+.culture-card,
+.story-visual,
+.map-container,
+.careers-card{
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+img,
+svg,
+video,
+canvas{
+    max-width:100%;
+    height:auto;
+}
